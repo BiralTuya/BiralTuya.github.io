@@ -1,12 +1,15 @@
+
 <div class = "body">
-  <mat-card>
+  <mat-card class="col-12">
     <div>
       <mat-card class = "card">
-        <div class = "header">
-          <mat-card-header>
-            <img mat-card-image src="assets/image/Profile.jpg" alt="Photo">
+        <!-- <div class = "header"> -->
+          <mat-card-header class="mb-3">
+           <div style="display: flex; justify-content: center;" class="w-100">
+            <img style="max-width: 100%; max-height: 100%;" src="assets/image/Profile.jpg" alt="Photo">
+           </div>
         </mat-card-header>
-        </div>
+        <!-- </div> -->
       <div class = "title">
         <mat-card>
           <mat-card-title><h1 style="text-align: center;">Sanzila Hossain Tuya</h1></mat-card-title>
@@ -14,7 +17,7 @@
           <div style="display: flex; justify-content: center;"><button mat-raised-button color="accent" (click)="downloadMyFile()">Resume&nbsp;&nbsp;<mat-icon>cloud_download</mat-icon></button></div>
         </mat-card>
       </div>
-      <div class = "content">
+      <!-- <div class = "content">
         <mat-card-content>
           <mat-tab-group>
             <mat-tab label="About Me" (click)="target.scrollIntoView({ behavior: 'smooth', block: 'center' })">
@@ -29,19 +32,21 @@
             <mat-tab label="Workshops"></mat-tab>
           </mat-tab-group>
       </mat-card-content>
-    </div>
+    </div> -->
       </mat-card>
     </div>
-    <div #target>
+    <div>
       <mat-card class="card">
         <mat-card-title><h1>About Me</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
-          <div style="display: flex;">
+          <div class="info_holder" style="display: flex;">
             <mat-card class ="column1"style="flex: 1 1 auto;">
-              <h5>
+              <h4>
                 Hi! I am Sanzila, student of RWTH Aachen University doing my master's in Software System Engineering. Currently I am living in aachen but willing to travel every cities in the world!
-              </h5>
+                Every morning I wake up with happiness and go to bed motivated. I am the one who loves challanges but always worried about those challenges!
+                Developing is nothing but mood lifting for me. Whenever I code, I forget sadness!
+              </h4>
 
             </mat-card>
             <mat-card class="column2" style="flex: 1 1 auto;">
@@ -49,10 +54,10 @@
               <h5>
                 Date of Birth:&nbsp; 7th June 1995 <br>
                 Nationality:&nbsp;Bangladeshi<br>
-                Languages:&nbsp;Bangla&nbsp;(Native),&nbsp;English&nbsp;(Good),&nbsp;Deutch&nbsp;(Beginner)<br>
+                Languages:&nbsp;Bangla&nbsp;(Native),&nbsp;English&nbsp;(Good),&nbsp;Deutsch&nbsp;(Beginner)<br>
                 <mat-divider></mat-divider><br>
                 Address:&nbsp;Rütscher Straße 6, 52072 Aachen, Germany<br>
-                Phone: +491786040873&nbsp;(Deutchland)
+                Phone: +491786040873&nbsp;(Deutschland)
                 &nbsp;&nbsp;&nbsp;&nbsp;+8801939385443&nbsp;(Bangladesh)<br>
                 Email:&nbsp;<a href="mailto:sanzila.tuya@rwth-aachen.de">sanzila.tuya@rwth-aachen.de</a><br>
                 Profiles:&nbsp;<a href="https://www.facebook.com/biral.tuya/">Facebook</a>
@@ -67,8 +72,8 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div>
-      <mat-card class="card">
+    <div style="display: flex;" class="info_holder">
+      <mat-card class="column mr-3" style="flex: 1 1 auto;">
         <mat-card-title><h1>Education</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -103,9 +108,7 @@
         </div>
         </mat-card-content>
       </mat-card>
-    </div>
-    <div>
-      <mat-card class="card">
+      <mat-card class="column" style="flex: 1 1 auto;">
         <mat-card-title><h1>Experiences</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -136,8 +139,8 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div>
-      <mat-card class="card">
+    <div style="display: flex;" class="info_holder">
+      <mat-card class="column mr-3" style="flex: 1 1 auto;">
         <mat-card-title><h1>Skills</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -178,9 +181,8 @@
           </div>
         </mat-card-content>
       </mat-card>
-    </div>
-    <div>
-      <mat-card class="card">
+
+      <mat-card class="column" style="flex: 1 1 auto;">
         <mat-card-title><h1>Awards & Participation</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -202,8 +204,8 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div>
-      <mat-card class="card">
+    <div style="display: flex;" class="info_holder mb-3">
+      <mat-card class="column mr-3" style="flex: 1 1 auto;">
         <mat-card-title><h1>Research Works</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -217,9 +219,8 @@
           </h5>
         </mat-card-content>
       </mat-card>
-    </div>
-    <div>
-      <mat-card class="card">
+
+      <mat-card class="column" style="flex: 1 1 auto;">
         <mat-card-title><h1>Workshops</h1></mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
@@ -241,9 +242,20 @@
           <h5>
           This Template is Created by: Sanzila Hossain Tuya<br>
           All rights reserved<br>
+          <div class="mt-3">
+            <fa-icon [icon]="faFacebook" size="2x"><a target="_blank" href="https://www.facebook.com/biral.tuya/"></a></fa-icon>
+            &nbsp;<fa-icon [icon]="faLinkedin" size="2x"><a target="_blank" href="https://www.linkedin.com/in/sanzila-hossain-tuya/"></a></fa-icon>
+            &nbsp;<fa-icon [icon]="faGithub" size="2x"><a target="_blank" href="https://github.com/BiralTuya"></a></fa-icon>
+          </div>
           </h5>
         </mat-card-footer>
       </mat-card>
     </div>
   </mat-card>
+</div>
+
+<div class="scroll-to-top" [ngClass]="windowScrolled ? 'show-scrollTop' : ''" >
+  <button mat-button style="background: grey;" (click)="scrollToTop()">
+      <fa-icon [icon]="faChevronUp"></fa-icon>
+  </button>
 </div>

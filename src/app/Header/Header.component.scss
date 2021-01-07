@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .title{
@@ -45,6 +45,27 @@ img {
   width: 30%;
 
 }
+.column{
+  background-color: #e3d5e3;
+  margin-top: 10px;
+  width: 48%;
+}
+.info_holder{
+  // flex-direction: column;
+  @media (max-width: 500px){
+    flex-direction: column;
+    .column1{
+      width: 100%;
+    }
+    .column2{
+      width: 100%;
+    }
+    .column{
+      width: 100%;
+    }
+ }
+
+}
 h1{
   color: #747171
 }
@@ -63,3 +84,15 @@ h5{
 h6{
   color: #747171
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+ }
+ .show-scrollTop {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+ }

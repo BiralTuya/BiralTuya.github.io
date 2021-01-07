@@ -11,9 +11,9 @@ import { HeaderComponent } from './Header/Header.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {MatIconModule} from '@angular/material/icon'
-
-
+import {MatIconModule} from '@angular/material/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,9 @@ import {MatIconModule} from '@angular/material/icon'
     MatDividerModule,
     MatGridListModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
