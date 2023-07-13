@@ -28,7 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploying to Github Pages
 
-ng deploy --base-href=/BiralTuya.github.io/
+ng build --prod --base-href=/
+npx angular-cli-ghpages --dir=dist/Portfolio
 git add .
 git commit -m "Deploying to Github Pages"
 git push
